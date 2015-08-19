@@ -155,6 +155,9 @@ endif
 " Rewrap a block of text
 map <S-Q> gq
 
+" Search and replace the current word under the cursor.
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>//g<Left><Left>
+
 " Ripped off from Cosmin Ratiu, on SO list; 30 Jun 2009
 if has("cscope")
         " Look for a 'cscope.out' file starting from the current directory,
