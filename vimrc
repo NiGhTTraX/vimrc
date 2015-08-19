@@ -73,6 +73,7 @@ nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 
 " Toggle search pattern highlighting.
 set hlsearch
+set incsearch
 nnoremap <F3> :noh<CR>
 
 " ctrlp: Ignore files that are in gitignore; also much faster.
