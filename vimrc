@@ -65,6 +65,9 @@ imap jj <Esc><Down>
 imap kk <Esc><Up>
 imap ggg <Esc>gg
 
+nnoremap J <C-D>
+nnoremap K <C-U>
+
 " Select last pasted/modified text in the same visual mode
 nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
 
