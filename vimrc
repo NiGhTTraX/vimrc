@@ -37,7 +37,11 @@ set mouse=a
 set nu
 
 " Enable pathogen.
-execute pathogen#infect()
+try
+  execute pathogen#infect()
+catch
+endtry
+
 syntax enable
 
 " Load indentation rules and plugins according to detected filetype.
